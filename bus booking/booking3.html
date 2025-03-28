@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: green;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .head2{
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .head2 a{
+        text-decoration: none;
+        color: white;
+    }
+    #btn{margin-left: 300px;
+        width: 50px;
+        background-color: red;
+        color: white;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+    /* content */
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 20px 80px;
+        
+    }
+    .box1{
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+    .item1,.item5,.item9{
+        background-color: rgb(108, 180, 108);
+        width: 700px;
+    }
+    .item2{
+        background-color: rgb(108, 180, 108);
+    }
+    .box13{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .book2{
+         display: grid;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .tite{
+        padding: 15px;
+    }
+    .item4{
+        display: grid;
+        padding: 10px;
+    }
+    .price5{ margin: 5px 0px;
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Price5 p{
+        color: cornflowerblue;
+    }
+    .Price5 b{
+        color: rgb(0, 0, 0);
+    }
+    .continue{
+        width: 360px;
+        height: 40px;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+    .item7{padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .travel1{display: grid;
+        text-align: center;
+        align-items: center;
+    }
+    .item11{
+        display: flex;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    @media(max-width:480px){
+        .nav{
+            grid-template-columns: 1fr;
+        }
+        .head2{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <header class="nav">
+        <div class="head1">logo hear</div>
+        <div class="head2">
+            <a href="booking.html"><li>Home</li></a>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </div>
+        <button id="btn">Log in</button>
+    </header>
+    <section class="box">
+        <div class="item1 box1">
+            <h4 class="tite">Bus Details</h4>
+        </div>
+        <div class="item2 box1">
+            <h4 class="tite">Price Details</h4>
+        </div>
+        <div class="item3 box1">
+            <div class="box13">
+                <div class="book">
+                    <h4 class="">National Travels</h4>
+                    <p class="">A/C Sleeper (2+1)</p><br>
+                    <p class=""><b>09:25</b> Mon 20,Jan 2025</p>
+                    <p class=""><b>Tenkasi</b></p><br>
+                    <p class="">Tenkasi new Bus Stand</p>
+                    <p>National Travels,</p>
+                    <p>No.66,New Bus Stand</p>
+                    <p>Complex</p>
+                </div>
+                <div class="book2">
+                    <div></div>
+                    <div class="text-center">
+                        <p class="">11h 55m</p>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="text-center">
+                        
+                    </div>
+                </div>
+                <div class="book">
+                    <p class=""><b>Seat no: U21,U20</b> <br><h6>View Policies</h6></p><br>
+                    <p class=""><b>8:30</b> Tues 21,Jan 2025</p>
+                    <p class=""><b>Chennai</b></p><br>
+                    <p class="">Koyambedu national</p>
+                    <p>terminal</p>
+                    <p>Ten sqar Mall,100</p>
+                    <p>Feet road</p>
+                </div>
+              </div>
+        </div>
+        <div class="item4 box1">
+            <div class="price5">
+                <div>Base Fare</div>
+                <div>$1800.00</div>
+            </div>
+            <div class="price5">
+                <div>Amount</div>
+                <div>$1800</div>
+            </div>
+            <div class="Price5">
+                <a href="booking4.html"><button class="continue">Continue</button></a>
+            </div>
+            <div class="Price5">
+                <p><b>By proceeding,I agree MakeMyTrips</b> Users</p>
+                <p>Agreement, Terms&condition and Privacy policy</p>
+            </div>
+        </div>
+        <div class="item5 box1">
+            <h4 class="tite">Travellers Details</h4>
+        </div>
+        <div class="item6 "></div>
+        <div class="item7 box1">
+            <div class="travel1">
+                <div class="seat">Seat <b>U21</b></div>
+                <div class="seat">Seat <b>U20</b></div>
+            </div>
+            <div class="travel">
+                <div class="contact">
+                    <label for="">Name </label><br>
+                    <input type="text">
+                    </div>
+                    <div class="contact">
+                    <label for="">Name</label><br>
+                    <input type="text">
+                    </div>
+            </div>
+            <div class="travel">
+                <div class="contact">
+                    <label for="">Age</label><br>
+                    <input type="number">
+                    </div>
+                    <div class="contact">
+                    <label for="">Age</label><br>
+                    <input type="number">
+                    </div>
+            </div>
+            <div class="travel">
+                <div class="contact">
+                    <label for="">Gender</label><br>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                    </div>
+                    <div class="contact">
+                    <label for="">Gender</label><br>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                    </div>
+            </div>
+        </div>
+        <div class="item8"></div>
+        <div class="item9 box1">
+            <h4 class="tite">Contact Details</h4>
+        </div>
+        <div class="item10"></div>
+        <div class="item11 box1">
+            <div class="contact">
+            <label for="">Email id </label><br>
+            <input type="email">
+            </div>
+            <div class="contact">
+            <label for="">Mobile Number </label><br>
+            <input type="email">
+            </div>
+        </div>
+        <div class="item12"></div>
+    </section>
+</body>
+</html>

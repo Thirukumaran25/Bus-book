@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: green;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .head2{
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .head2 a{
+        text-decoration: none;
+        color: white;
+    }
+    #btn{margin-left: 300px;
+        width: 50px;
+        background-color: red;
+        color: white;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* Banner layout*/
+    .content1{
+        background: url(image/bus.jpeg) no-repeat;
+        height: 300px;
+        background-size: 1300px 300px;
+        align-content: end;
+    }
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 0px 200px;
+        gap: 10px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 128, 0, 0.58);
+        margin-bottom: 20px;
+        }
+    .car{border: 1px solid rgb(248, 247, 247);
+        background-color: rgba(0, 128, 0, 0.58);
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .car i{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    /* content */
+    .content2{ padding: 20px 60px;
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+    .card , .item1{
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);
+        border-radius: 8px;
+    }
+    .content2 .item1{
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .item1 h3{color: green;
+        padding: 10px;
+    }
+    .item1 div{border: 1px solid;
+        width: 200px;
+        height: 35px;
+        align-items: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content2 select{
+        width: 200px;
+        padding: 10px;
+        margin: 12px 10px;
+        border-radius: 5px;
+
+    }
+    .item2{display: grid;
+        row-gap: 20px;
+        margin: 10px;
+    }
+    .item2{
+        height: 150px;
+    }
+    .box1{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .box2{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid black;
+    }
+    .book2{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .relative{
+        padding: 5px;
+        margin: 10px;
+    }
+    .seat{
+        background-color: red;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+    button{
+        border: none;
+    }
+    .icon{
+        background-color: rgb(246, 205, 0);
+        color: red;
+        border-radius: 5px;
+    }
+    @media (max-width: 767px){
+        .nav,.head2,.card1,.content2{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .box1,.book2,.box2{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<body>
+    <header class="nav">
+        <div class="head1">logo hear</div>
+        <div class="head2">
+            <a href="booking.html"><li>Home</li></a>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </div>
+        <button id="btn">Log in</button>
+    </header>
+    <section class="content1">
+        <div class="card1">
+            <div class="car">from <br> Chennai</div>
+            <div class="car">To <br> Tenkasi</div>
+            <div class="car">Date <br> Mon,20 Jan 2025 <i class='bx bx-calendar' style='color:#ffffff'  ></i></div>
+            <div class="car"><h3>Search</h3></div>
+        </div>
+    </section>
+    <section class="content2">
+
+        <div class="item1">
+            <h3>26 Bus Available</h3>
+            <div>
+                <span>Filtter</span>
+                <button class="">Clear all</button>
+            </div>
+            <br>
+            <select name="" id="">
+                <option value="Filter">Live Tracking</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Bus Type</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Seat Type</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Departure</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Boarding Point</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Dropping Point</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Bus Operator</option>
+            </select><br>
+            <select name="" id="">
+                <option value="Filter">Amenities</option>
+            </select><br>
+            
+        </div>
+        <div class="item2">
+            <h3 id="card2">Chennai to Tenkasi Monday, 20 January 2025</h3>
+            <div class="card item">
+             <div class="box1">
+                <div class="book">
+                    <h2 class="">National Travels</h2>
+                    <p class="">A/C Sleeper (2+1)</p>
+                    <p class="">28 Seats Left</p>
+                    <div class="">
+                        <span class="icon"><i class='bx bxs-star' style='color:#ffffff'  ></i>4.5</span>
+                        <span class="">382 Rating</span>
+                    </div>
+                </div>
+                <div class="book2">
+                    <div class="text-center">
+                        <p class="">09:25</p>
+                        <p class="">Tenkasi</p>
+                        <p class="">New Bus Stand</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="">11h 55m</p>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="">8:30</p>
+                        <p class="">Chennai</p>
+                        <p class="">Koyambedu</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <p class="">₹900</p>
+                </div>
+              </div>
+              <div class="box2">
+                <div class="book2">
+                    <div class="relative">
+                        <button class="">Policies</button>
+                    </div>
+                    <div class="relative">
+                        <button class="">Photos</button>
+                    </div>
+                    <div class="relative">
+                        <button class="">Amenities</button>
+                    </div>
+                    <div class="relative">
+                        <button class="">Reviews</button>
+                    </div>
+                </div>
+                <a href="booking2.html"><button class="seat">Select Seats</button></a>
+              </div>
+            </div>
+            <div class="card item">
+                <div class="box1">
+                    <div class="book">
+                        <h2 class="">Yolo</h2>
+                        <p class="">Non A/C Sleeper (2+1)</p>
+                        <p class="">28 Seats Left</p>
+                        <div class="">
+                            <span class="icon"><i class='bx bxs-star' style='color:#ffffff'  ></i></i>4.5</span>
+                            <span class="">382 Rating</span>
+                        </div>
+                    </div>
+                    <div class="book2">
+                        <div class="text-center">
+                            <p class="">09:45</p>
+                            <p class="">Tenkasi</p>
+                            <p class="">New Bus Stand</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="">10h 55m</p>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                        <div class="text-center">
+                            <p class="">7:10</p>
+                            <p class="">Chennai</p>
+                            <p class="">Koyambedu</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <p class="">₹1499</p>
+                    </div>
+                  </div>
+                  <div class="box2">
+                    <div class="book2">
+                        <div class="relative">
+                            <button class="">Policies</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Photos</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Amenities</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Reviews</button>
+                        </div>
+                    </div>
+                    <a href="booking2.html"><button class="seat">Select Seats</button></a>
+                  </div>
+            </div>
+            <div class="card item">
+                <div class="box1">
+                    <div class="book">
+                        <h2 class="">YBM Travels</h2>
+                        <p class="">A/C Sleeper (2+1)</p>
+                        <p class="">15 Seats Left</p>
+                        <div class="">
+                            <span class="icon"><i class='bx bxs-star' style='color:#ffffff'  ></i>4.5</span>
+                            <span class="">382 Rating</span>
+                        </div>
+                    </div>
+                    <div class="book2">
+                        <div class="text-center">
+                            <p class="">08:25</p>
+                            <p class="">Tenkasi</p>
+                            <p class="">New Bus Stand</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="">1h 55m</p>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                        <div class="text-center">
+                            <p class="">7:30</p>
+                            <p class="">Chennai</p>
+                            <p class="">Koyambedu</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <p class="">₹1099</p>
+                    </div>
+                  </div>
+                  <div class="box2">
+                    <div class="book2">
+                        <div class="relative">
+                            <button class="">Policies</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Photos</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Amenities</button>
+                        </div>
+                        <div class="relative">
+                            <button class="">Reviews</button>
+                        </div>
+                    </div>
+                    <a href="booking2.html"><button class="seat">Select Seats</button></a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: green;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .head2{
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .head2 a{
+        text-decoration: none;
+        color: white;
+    }
+    #btn{margin-left: 300px;
+        width: 50px;
+        background-color: red;
+        color: white;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* content */
+
+    .item1{
+        width: 700px;
+    }
+    .pay1{padding: 10px;
+        border-bottom: 1px solid;
+    }
+    .pay1 span{
+        font-size: 25px;
+    }
+    .pay1 p{margin-left: 15px;
+        font-size: 14px;
+    }
+    .pay1 #in{margin-left: 15px;
+        font-size: 14px;
+        background-color: rgb(235, 235, 235);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .pay2{padding: 10px;
+        border-bottom: 1px solid;
+    }
+    .pay3{padding: 10px;
+    }
+    .pay3 i{font-size: 40px;
+        
+    }
+    input{
+        margin: 8px 0px;
+    }
+    .box1{
+        border: 1px solid black;
+        border-radius: 5px;}
+    .head4{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px 60px;
+        padding: 15px;
+        background-color: rgb(131, 192, 131);
+    }
+
+    .head5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: 5px 60px;
+    }
+    .item4{
+        display: grid;
+        gap: 20px;
+        padding:10px;
+        height: 200px;
+    }
+    .Price4 p{
+        color: #3f96ff;
+    }
+    .Price4 b{
+        color: #000000;
+    }
+    .price5{border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+    .continue{
+        width: 400px;
+        height: 40px;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+</style>
+<body>
+    <header class="nav">
+        <div class="head1">logo hear</div>
+        <div class="head2">
+            <a href="booking.html"><li>Home</li></a>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </div>
+        <button id="btn">Log in</button>
+    </header>
+    <section class="content">
+        <div class="head4"><h3>Payment Details</h3></div>
+        <div class="head5">
+            <div class="item1 box1">
+                <div class="pay1">
+                    <input type="radio">Credit/Debit Cards <span><i class='bx bxl-visa' style='color:#3f96ff'  ></i><i class='bx bxl-mastercard' style='color:#f90303'  ></i></span>
+                    <p>pay with your Credit/Debit Cards</p><br>
+                    <input id="in" type="number" placeholder="card number"><br>
+                    <input id="in" type="number" placeholder="mm/yy">
+                    <input id="in" type="number" placeholder="CVV">
+                </div>
+                <div class="pay2">
+                    <h4>UPI payments</h4>
+                    <h5>Pay using UPI id</h5>
+                    <input type="text">
+                </div>
+                <div class="pay3">
+                    <h4>Other payments</h4><br>
+                    <img src="image/paytm.webp" alt="" height="50px" width="60px"><img src="image/paypal.png" alt="" height="40px"><img src="image/gpay.png" alt="" height="30px" width="60px">
+                </div>
+            </div>
+            <div class="item4 box1">
+                <div class="price5">
+                    <div>Base Fare</div>
+                    <div>$1800.00</div>
+                </div>
+                <div class="price5">
+                    <div>Amount</div>
+                    <div>$1800</div>
+                </div>
+                <div class="Price4">
+                    <a href=""><button class="continue">Pay $1800</button></a>
+                </div>
+                <div class="Price4">
+                    <p><b>By proceeding,I agree MakeMyTrips</b> Users</p>
+                    <p>Agreement, Terms&condition <b>and</b> Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

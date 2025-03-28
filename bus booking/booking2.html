@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: green;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .head2{
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .head2 a{
+        text-decoration: none;
+        color: white;
+    }
+    #btn{margin-left: 300px;
+        width: 50px;
+        background-color: red;
+        color: white;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* Banner */
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 15px 200px;
+        border-radius: 5px;
+        gap: 10px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 128, 0, 0.58);
+        margin-bottom: 20px;
+    }
+    .car{border: 1px solid rgb(0, 0, 0);
+        background-color: rgba(116, 173, 116, 0.7);
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /* content */
+    .sel{
+        padding: 20px 100px;
+        margin: 20px;
+    }
+    .head5{ margin-left: 25px;
+    color: green;}
+    .content2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .content2 .gray{border: none;
+        background-color: rgb(172, 168, 168);
+    }
+    .content2 .green{border: none;
+        background-color: rgb(88, 138, 104);
+    }
+    .content2 p{
+        font-size: 12px;
+    }
+    .table1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 20px;  
+    }
+    .value4{ display: flex;
+        justify-content: space-between;
+        color: green;
+    }
+    .value4 i{font-size: 20px;
+        margin-right: 20px;
+    }
+    .box{margin: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px -5px;
+    }
+    .seat1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 3px;
+        margin-top: 20px;
+    }
+    .seat2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); }
+
+    .btn2{text-align: center;
+        height: 50px;
+        width: 30px;
+    }
+    .part1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        row-gap: 30px;
+    }
+    .copart1{
+        display: flex;
+        gap: 10px;
+    }
+    .copart2{
+        width: 45px;
+        height: 25px;
+        border: 1px solid black;
+    }
+    .part2{
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .value5{
+        margin-right: 60px;
+    }
+    .value6{
+        font-size: 10px;
+        color: green;
+    }
+    .continue{
+        width: 420px;
+        height: 40px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+    @media (max-width: 767px){
+       
+        .nav{
+           display: flex;
+           flex-direction: column;
+        }
+        .head2{
+            flex-direction: column;
+        }
+        .card1{
+            display: flex;
+           flex-direction: column;
+           width: 80px;
+        }
+        .sel{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+        .content2{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+        .table1{
+            display:grid;
+            grid-template-columns: 1fr;
+            width: 80px;
+        }
+        
+    }
+</style>
+<body>
+    <header class="nav">
+        <div class="head1">logo hear</div>
+        <div class="head2">
+            <a href="booking.html"><li>Home</li></a>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </div>
+        <button id="btn">Log in</button>
+    </header>
+    <!-- banner -->
+    <section class="content1">
+        <div class="card1">
+            <div class="car">from <br> Chennai</div>
+            <div class="car">To <br> Tenkasi</div>
+            <div class="car">Date <br> Mon,20 Jan 2025</div>
+            <div class="car"><h3>Search</h3></div>
+        </div>
+    </section>
+
+    <section class="sel">
+        <h3 class="head5">Select a Seat</h3>
+        <div class="content2">
+            <div class="table1">
+                <div class="box">
+                    <h5 class="value4">Lower deck<i class='bx bx-color'></i></h5>
+                    <div class="seat1">
+                        <div class="seat2">
+                            <button class="btn2"><br>L3 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray"><br>L2 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2"><br>L1 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2"><br>L6 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray"><br>L5 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2 gray"><br>L4 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray"><br>L9 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray"><br>L8 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2 gray"><br>L7 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2"><br>L12 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2"><br>L11 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2"><br>L10 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2"><br>L15 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2"><br>L14 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2"><br>L13 <br><i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h5 class="value4">Upper deck<i class='bx bx-color'></i></h5>
+                    <div class="seat1">
+                        <div class="seat2">
+                            <button class="btn2 gray">U16<i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray">U15<i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2 gray">U14<i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray">U19<i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2">U18<i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2">U17<i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray">U22<i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2">U21<i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2">U20<i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray">U25<i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2 gray">U24<i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2 gray">U23<i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2">U28<i class='bx bx-rectangle' undefined ></i></button>
+                            <div></div>
+                            <p>$900</p>
+                        </div>
+                        <div class="seat2">
+                            <button class="btn2">U27<i class='bx bx-rectangle' undefined ></i></button>
+                            <button class="btn2">U26<i class='bx bx-rectangle' undefined ></i></button>
+                            <p>$900</p><p>$900</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table2">
+                <div class="part1">
+                    <div class="copart1">
+                        <div class="copart2"></div><span>Available</span>
+                    </div>
+                    <div class="copart1">
+                        <div class="copart2"></div><span>Female</span>
+                    </div>
+                    <div class="copart1">
+                        <div class="copart2 green"></div><span>Selected</span>
+                    </div>
+                    <div class="copart1">
+                        <div class="copart2 gray"></div><span>Unavailable</span>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <h3>Selected Seats</h3>
+                        <p><h3>U21,U20</h3></p>
+                    </div>
+                    <div>
+                        <h3 class="value5">$1800</h3>
+                        <p class="value6">fare detail</p>
+                    </div>
+                </div>
+                <div class="part3">
+                    <a href="booking3.html"><button class="continue">Continue</button></a>
+                </div>
+            </div>
+                
+             
+    </section>
+</body>
+</html>
